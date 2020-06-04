@@ -1,5 +1,8 @@
 package com.haung.project;
 
+import com.haung.project.Animal.Animal;
+import com.haung.project.Animal.Bear;
+import com.haung.project.Animal.Snake;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -9,7 +12,7 @@ import java.util.Scanner;
 public class ProjectApplication {
 
 	public static void main(String[] args) {
-		//SpringApplication.run(ProjectApplication.class, args);
+//		SpringApplication.run(ProjectApplication.class, args);
 
 		Scanner scanner = new Scanner(System.in);
 
@@ -37,7 +40,15 @@ public class ProjectApplication {
 
 		}
 
-		
+
+		Animal ourSnake = new Snake();
+		Animal ourBear = new Bear();
+		ourBear.name = "Yogi";
+
+		System.out.println(ourSnake.food());
+		System.out.println(ourBear.name);
+		System.out.println(ourBear.food());
+
 	}
 
 }
