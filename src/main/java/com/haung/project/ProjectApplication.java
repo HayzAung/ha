@@ -48,6 +48,14 @@ public class ProjectApplication {
 		System.out.println(ourSnake.food());
 		System.out.println(ourBear.name);
 		System.out.println(ourBear.food());
+		Scanner myscanner = new Scanner(System.in);
+
+		int e = myscanner.nextInt();
+		int sum = 0;
+		for (int r = 1 ; r <= e ; r++) {
+			sum = r + sum;
+		}
+		System.out.println(sum);
 
 	}
 
